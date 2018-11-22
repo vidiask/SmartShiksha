@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8814E01C20A56BE200FB47BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E01B20A56BE200FB47BF /* AppDelegate.swift */; };
+		8814E01E20A56BE200FB47BF /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E01D20A56BE200FB47BF /* DashBoardViewController.swift */; };
+		8814E02120A56BE200FB47BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8814E01F20A56BE200FB47BF /* Main.storyboard */; };
+		8814E02420A56BE200FB47BF /* SmartShiksha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8814E02220A56BE200FB47BF /* SmartShiksha.xcdatamodeld */; };
+		8814E02620A56BE400FB47BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8814E02520A56BE400FB47BF /* Assets.xcassets */; };
+		8814E02920A56BE400FB47BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8814E02720A56BE400FB47BF /* LaunchScreen.storyboard */; };
+		8814E03420A56BE400FB47BF /* SmartShikshaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E03320A56BE400FB47BF /* SmartShikshaTests.swift */; };
+		8814E03F20A56BE400FB47BF /* SmartShikshaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E03E20A56BE400FB47BF /* SmartShikshaUITests.swift */; };
+		8814E04E20A56C9100FB47BF /* SSAttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E04D20A56C9100FB47BF /* SSAttendanceViewController.swift */; };
+		8814E05420A56F9B00FB47BF /* Attendance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8814E05320A56F9B00FB47BF /* Attendance.storyboard */; };
+		8814E05620A5724600FB47BF /* SSAttendaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E05520A5724600FB47BF /* SSAttendaceTableViewCell.swift */; };
+		8814E05820A5746200FB47BF /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E05720A5746200FB47BF /* Student.swift */; };
+		8814E05A20A5760000FB47BF /* SSAttendanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E05920A5760000FB47BF /* SSAttendanceViewModel.swift */; };
+		8814E05E20A5906200FB47BF /* Students.json in Resources */ = {isa = PBXBuildFile; fileRef = 8814E05D20A5906200FB47BF /* Students.json */; };
+		8814E06C20A59AC500FB47BF /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06020A59AC400FB47BF /* AppearanceViewController.swift */; };
+		8814E06D20A59AC500FB47BF /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06120A59AC400FB47BF /* OutlineViewController.swift */; };
+		8814E06E20A59AC500FB47BF /* ActionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06220A59AC400FB47BF /* ActionMenuViewController.swift */; };
+		8814E06F20A59AC500FB47BF /* ThumbnailGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06320A59AC400FB47BF /* ThumbnailGridCell.swift */; };
+		8814E07020A59AC500FB47BF /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06420A59AC400FB47BF /* BookViewController.swift */; };
+		8814E07120A59AC500FB47BF /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06520A59AC400FB47BF /* BookmarkViewController.swift */; };
+		8814E07220A59AC500FB47BF /* BookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06620A59AC500FB47BF /* BookshelfViewController.swift */; };
+		8814E07320A59AC500FB47BF /* BookshelfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06720A59AC500FB47BF /* BookshelfCell.swift */; };
+		8814E07420A59AC500FB47BF /* SearchResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06820A59AC500FB47BF /* SearchResultsCell.swift */; };
+		8814E07520A59AC500FB47BF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06920A59AC500FB47BF /* SearchViewController.swift */; };
+		8814E07620A59AC500FB47BF /* OutlineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06A20A59AC500FB47BF /* OutlineCell.swift */; };
+		8814E07720A59AC500FB47BF /* ThumbnailGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814E06B20A59AC500FB47BF /* ThumbnailGridViewController.swift */; };
+		8814E07B20A59C3400FB47BF /* Reader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8814E07820A59C3400FB47BF /* Reader.storyboard */; };
+		8814E07C20A59C3400FB47BF /* SearchResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8814E07920A59C3400FB47BF /* SearchResultsCell.xib */; };
+		8814E07D20A59C3400FB47BF /* ThumbnailGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8814E07A20A59C3400FB47BF /* ThumbnailGridCell.xib */; };
+		8814E08120A59DBA00FB47BF /* oxford_guide_to_english_grammar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8814E08020A59DBA00FB47BF /* oxford_guide_to_english_grammar.pdf */; };
+		882F606E20A97C7B000C4F8B /* SSNoticeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F606D20A97C7B000C4F8B /* SSNoticeBoardViewController.swift */; };
+		883C196320B549EF00C783C6 /* Countries Capitals Currencies.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 883C196220B549EF00C783C6 /* Countries Capitals Currencies.pdf */; };
+		886F5E8F20A5AF0A005ADEDA /* SSNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5E8E20A5AF0A005ADEDA /* SSNotesViewController.swift */; };
+		886F5E9120A5AF25005ADEDA /* SSNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5E9020A5AF25005ADEDA /* SSNotesViewModel.swift */; };
+		886F5E9320A5AF56005ADEDA /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886F5E9220A5AF56005ADEDA /* Notes.storyboard */; };
+		886F5E9420A5AF56005ADEDA /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886F5E9220A5AF56005ADEDA /* Notes.storyboard */; };
+		886F5EA020A5B6AD005ADEDA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5E9F20A5B6AD005ADEDA /* DatabaseManager.swift */; };
+		886F5EA520A5BAB4005ADEDA /* NotesSubject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5EA120A5BAB4005ADEDA /* NotesSubject+CoreDataClass.swift */; };
+		886F5EA620A5BAB4005ADEDA /* NotesSubject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5EA220A5BAB4005ADEDA /* NotesSubject+CoreDataProperties.swift */; };
+		886F5EA720A5BAB4005ADEDA /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5EA320A5BAB4005ADEDA /* Note+CoreDataClass.swift */; };
+		886F5EA820A5BAB4005ADEDA /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5EA420A5BAB4005ADEDA /* Note+CoreDataProperties.swift */; };
+		886F5EAA20A5C2B0005ADEDA /* SSNoteEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5EA920A5C2B0005ADEDA /* SSNoteEditorViewController.swift */; };
+		88EB136020AEB338008F367F /* SSQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB135F20AEB338008F367F /* SSQuizViewController.swift */; };
+		88EB136220AEB34E008F367F /* SSQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB136120AEB34E008F367F /* SSQuizViewModel.swift */; };
+		88EB136420AEB36D008F367F /* SSQuizItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB136320AEB36D008F367F /* SSQuizItem.swift */; };
+		88EB136820AEBA4C008F367F /* Quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 88EB136720AEBA4C008F367F /* Quiz.json */; };
+		88EB136A20AEC9F9008F367F /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EB136920AEC9F9008F367F /* Quiz.storyboard */; };
+		88EB136C20AECC47008F367F /* SSQuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB136B20AECC47008F367F /* SSQuizCollectionViewCell.swift */; };
+		88EB136E20AECC5F008F367F /* SSQuizOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB136D20AECC5F008F367F /* SSQuizOptionTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8814E03020A56BE400FB47BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8814E01020A56BE200FB47BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8814E01720A56BE200FB47BF;
+			remoteInfo = SmartShiksha;
+		};
+		8814E03B20A56BE400FB47BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8814E01020A56BE200FB47BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8814E01720A56BE200FB47BF;
+			remoteInfo = SmartShiksha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8814E01820A56BE200FB47BF /* SmartShiksha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShiksha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8814E01B20A56BE200FB47BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8814E01D20A56BE200FB47BF /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		8814E02020A56BE200FB47BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8814E02320A56BE200FB47BF /* SmartShiksha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartShiksha.xcdatamodel; sourceTree = "<group>"; };
+		8814E02520A56BE400FB47BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8814E02820A56BE400FB47BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8814E02A20A56BE400FB47BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8814E02F20A56BE400FB47BF /* SmartShikshaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShikshaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8814E03320A56BE400FB47BF /* SmartShikshaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShikshaTests.swift; sourceTree = "<group>"; };
+		8814E03520A56BE400FB47BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8814E03A20A56BE400FB47BF /* SmartShikshaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShikshaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8814E03E20A56BE400FB47BF /* SmartShikshaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartShikshaUITests.swift; sourceTree = "<group>"; };
+		8814E04020A56BE400FB47BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8814E04D20A56C9100FB47BF /* SSAttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAttendanceViewController.swift; sourceTree = "<group>"; };
+		8814E05320A56F9B00FB47BF /* Attendance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Attendance.storyboard; sourceTree = "<group>"; };
+		8814E05520A5724600FB47BF /* SSAttendaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAttendaceTableViewCell.swift; sourceTree = "<group>"; };
+		8814E05720A5746200FB47BF /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		8814E05920A5760000FB47BF /* SSAttendanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAttendanceViewModel.swift; sourceTree = "<group>"; };
+		8814E05D20A5906200FB47BF /* Students.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Students.json; sourceTree = "<group>"; };
+		8814E06020A59AC400FB47BF /* AppearanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
+		8814E06120A59AC400FB47BF /* OutlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
+		8814E06220A59AC400FB47BF /* ActionMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionMenuViewController.swift; sourceTree = "<group>"; };
+		8814E06320A59AC400FB47BF /* ThumbnailGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailGridCell.swift; sourceTree = "<group>"; };
+		8814E06420A59AC400FB47BF /* BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		8814E06520A59AC400FB47BF /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		8814E06620A59AC500FB47BF /* BookshelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshelfViewController.swift; sourceTree = "<group>"; };
+		8814E06720A59AC500FB47BF /* BookshelfCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookshelfCell.swift; sourceTree = "<group>"; };
+		8814E06820A59AC500FB47BF /* SearchResultsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsCell.swift; sourceTree = "<group>"; };
+		8814E06920A59AC500FB47BF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8814E06A20A59AC500FB47BF /* OutlineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineCell.swift; sourceTree = "<group>"; };
+		8814E06B20A59AC500FB47BF /* ThumbnailGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailGridViewController.swift; sourceTree = "<group>"; };
+		8814E07820A59C3400FB47BF /* Reader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reader.storyboard; sourceTree = "<group>"; };
+		8814E07920A59C3400FB47BF /* SearchResultsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsCell.xib; sourceTree = "<group>"; };
+		8814E07A20A59C3400FB47BF /* ThumbnailGridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailGridCell.xib; sourceTree = "<group>"; };
+		8814E08020A59DBA00FB47BF /* oxford_guide_to_english_grammar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = oxford_guide_to_english_grammar.pdf; sourceTree = "<group>"; };
+		882F606D20A97C7B000C4F8B /* SSNoticeBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNoticeBoardViewController.swift; sourceTree = "<group>"; };
+		883C196220B549EF00C783C6 /* Countries Capitals Currencies.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Countries Capitals Currencies.pdf"; sourceTree = "<group>"; };
+		886F5E8E20A5AF0A005ADEDA /* SSNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNotesViewController.swift; sourceTree = "<group>"; };
+		886F5E9020A5AF25005ADEDA /* SSNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNotesViewModel.swift; sourceTree = "<group>"; };
+		886F5E9220A5AF56005ADEDA /* Notes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		886F5E9F20A5B6AD005ADEDA /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		886F5EA120A5BAB4005ADEDA /* NotesSubject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesSubject+CoreDataClass.swift"; sourceTree = "<group>"; };
+		886F5EA220A5BAB4005ADEDA /* NotesSubject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesSubject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		886F5EA320A5BAB4005ADEDA /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		886F5EA420A5BAB4005ADEDA /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		886F5EA920A5C2B0005ADEDA /* SSNoteEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNoteEditorViewController.swift; sourceTree = "<group>"; };
+		88EB135F20AEB338008F367F /* SSQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSQuizViewController.swift; sourceTree = "<group>"; };
+		88EB136120AEB34E008F367F /* SSQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSQuizViewModel.swift; sourceTree = "<group>"; };
+		88EB136320AEB36D008F367F /* SSQuizItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSQuizItem.swift; sourceTree = "<group>"; };
+		88EB136720AEBA4C008F367F /* Quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quiz.json; sourceTree = "<group>"; };
+		88EB136920AEC9F9008F367F /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		88EB136B20AECC47008F367F /* SSQuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSQuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		88EB136D20AECC5F008F367F /* SSQuizOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSQuizOptionTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8814E01520A56BE200FB47BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8814E02C20A56BE400FB47BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8814E03720A56BE400FB47BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8814E00F20A56BE200FB47BF = {
+			isa = PBXGroup;
+			children = (
+				8814E01A20A56BE200FB47BF /* SmartShiksha */,
+				8814E03220A56BE400FB47BF /* SmartShikshaTests */,
+				8814E03D20A56BE400FB47BF /* SmartShikshaUITests */,
+				8814E01920A56BE200FB47BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8814E01920A56BE200FB47BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8814E01820A56BE200FB47BF /* SmartShiksha.app */,
+				8814E02F20A56BE400FB47BF /* SmartShikshaTests.xctest */,
+				8814E03A20A56BE400FB47BF /* SmartShikshaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8814E01A20A56BE200FB47BF /* SmartShiksha */ = {
+			isa = PBXGroup;
+			children = (
+				88EB135E20AEB31C008F367F /* Quiz */,
+				886F5E9520A5B34E005ADEDA /* Database */,
+				886F5E8D20A5AEE5005ADEDA /* Notes */,
+				8814E05F20A59A9300FB47BF /* Reader */,
+				8814E04F20A56D8A00FB47BF /* DummyResources */,
+				8814E04C20A56C4900FB47BF /* Attendance */,
+				882F606C20A97BC7000C4F8B /* NoticeBoard */,
+				8814E01B20A56BE200FB47BF /* AppDelegate.swift */,
+				8814E01D20A56BE200FB47BF /* DashBoardViewController.swift */,
+				8814E01F20A56BE200FB47BF /* Main.storyboard */,
+				8814E02520A56BE400FB47BF /* Assets.xcassets */,
+				8814E02720A56BE400FB47BF /* LaunchScreen.storyboard */,
+				8814E02A20A56BE400FB47BF /* Info.plist */,
+				8814E02220A56BE200FB47BF /* SmartShiksha.xcdatamodeld */,
+			);
+			path = SmartShiksha;
+			sourceTree = "<group>";
+		};
+		8814E03220A56BE400FB47BF /* SmartShikshaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8814E03320A56BE400FB47BF /* SmartShikshaTests.swift */,
+				8814E03520A56BE400FB47BF /* Info.plist */,
+			);
+			path = SmartShikshaTests;
+			sourceTree = "<group>";
+		};
+		8814E03D20A56BE400FB47BF /* SmartShikshaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8814E03E20A56BE400FB47BF /* SmartShikshaUITests.swift */,
+				8814E04020A56BE400FB47BF /* Info.plist */,
+			);
+			path = SmartShikshaUITests;
+			sourceTree = "<group>";
+		};
+		8814E04C20A56C4900FB47BF /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				8814E05920A5760000FB47BF /* SSAttendanceViewModel.swift */,
+				8814E04D20A56C9100FB47BF /* SSAttendanceViewController.swift */,
+				8814E05520A5724600FB47BF /* SSAttendaceTableViewCell.swift */,
+				8814E05320A56F9B00FB47BF /* Attendance.storyboard */,
+			);
+			path = Attendance;
+			sourceTree = "<group>";
+		};
+		8814E04F20A56D8A00FB47BF /* DummyResources */ = {
+			isa = PBXGroup;
+			children = (
+				883C196220B549EF00C783C6 /* Countries Capitals Currencies.pdf */,
+				8814E08020A59DBA00FB47BF /* oxford_guide_to_english_grammar.pdf */,
+				8814E05D20A5906200FB47BF /* Students.json */,
+				88EB136720AEBA4C008F367F /* Quiz.json */,
+				8814E05720A5746200FB47BF /* Student.swift */,
+			);
+			path = DummyResources;
+			sourceTree = "<group>";
+		};
+		8814E05F20A59A9300FB47BF /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				8814E06220A59AC400FB47BF /* ActionMenuViewController.swift */,
+				8814E06020A59AC400FB47BF /* AppearanceViewController.swift */,
+				8814E06520A59AC400FB47BF /* BookmarkViewController.swift */,
+				8814E06720A59AC500FB47BF /* BookshelfCell.swift */,
+				8814E06620A59AC500FB47BF /* BookshelfViewController.swift */,
+				8814E06420A59AC400FB47BF /* BookViewController.swift */,
+				8814E06A20A59AC500FB47BF /* OutlineCell.swift */,
+				8814E06120A59AC400FB47BF /* OutlineViewController.swift */,
+				8814E06820A59AC500FB47BF /* SearchResultsCell.swift */,
+				8814E06920A59AC500FB47BF /* SearchViewController.swift */,
+				8814E06320A59AC400FB47BF /* ThumbnailGridCell.swift */,
+				8814E06B20A59AC500FB47BF /* ThumbnailGridViewController.swift */,
+				8814E07820A59C3400FB47BF /* Reader.storyboard */,
+				8814E07920A59C3400FB47BF /* SearchResultsCell.xib */,
+				8814E07A20A59C3400FB47BF /* ThumbnailGridCell.xib */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		882F606C20A97BC7000C4F8B /* NoticeBoard */ = {
+			isa = PBXGroup;
+			children = (
+				882F606D20A97C7B000C4F8B /* SSNoticeBoardViewController.swift */,
+			);
+			path = NoticeBoard;
+			sourceTree = "<group>";
+		};
+		886F5E8D20A5AEE5005ADEDA /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				886F5E8E20A5AF0A005ADEDA /* SSNotesViewController.swift */,
+				886F5EA920A5C2B0005ADEDA /* SSNoteEditorViewController.swift */,
+				886F5E9020A5AF25005ADEDA /* SSNotesViewModel.swift */,
+				886F5E9220A5AF56005ADEDA /* Notes.storyboard */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		886F5E9520A5B34E005ADEDA /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				886F5E9620A5B358005ADEDA /* Entity */,
+				886F5E9F20A5B6AD005ADEDA /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		886F5E9620A5B358005ADEDA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				886F5EA120A5BAB4005ADEDA /* NotesSubject+CoreDataClass.swift */,
+				886F5EA220A5BAB4005ADEDA /* NotesSubject+CoreDataProperties.swift */,
+				886F5EA320A5BAB4005ADEDA /* Note+CoreDataClass.swift */,
+				886F5EA420A5BAB4005ADEDA /* Note+CoreDataProperties.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		88EB135E20AEB31C008F367F /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				88EB135F20AEB338008F367F /* SSQuizViewController.swift */,
+				88EB136120AEB34E008F367F /* SSQuizViewModel.swift */,
+				88EB136320AEB36D008F367F /* SSQuizItem.swift */,
+				88EB136B20AECC47008F367F /* SSQuizCollectionViewCell.swift */,
+				88EB136D20AECC5F008F367F /* SSQuizOptionTableViewCell.swift */,
+				88EB136920AEC9F9008F367F /* Quiz.storyboard */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8814E01720A56BE200FB47BF /* SmartShiksha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8814E04320A56BE400FB47BF /* Build configuration list for PBXNativeTarget "SmartShiksha" */;
+			buildPhases = (
+				8814E01420A56BE200FB47BF /* Sources */,
+				8814E01520A56BE200FB47BF /* Frameworks */,
+				8814E01620A56BE200FB47BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartShiksha;
+			productName = SmartShiksha;
+			productReference = 8814E01820A56BE200FB47BF /* SmartShiksha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8814E02E20A56BE400FB47BF /* SmartShikshaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8814E04620A56BE400FB47BF /* Build configuration list for PBXNativeTarget "SmartShikshaTests" */;
+			buildPhases = (
+				8814E02B20A56BE400FB47BF /* Sources */,
+				8814E02C20A56BE400FB47BF /* Frameworks */,
+				8814E02D20A56BE400FB47BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8814E03120A56BE400FB47BF /* PBXTargetDependency */,
+			);
+			name = SmartShikshaTests;
+			productName = SmartShikshaTests;
+			productReference = 8814E02F20A56BE400FB47BF /* SmartShikshaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8814E03920A56BE400FB47BF /* SmartShikshaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8814E04920A56BE400FB47BF /* Build configuration list for PBXNativeTarget "SmartShikshaUITests" */;
+			buildPhases = (
+				8814E03620A56BE400FB47BF /* Sources */,
+				8814E03720A56BE400FB47BF /* Frameworks */,
+				8814E03820A56BE400FB47BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8814E03C20A56BE400FB47BF /* PBXTargetDependency */,
+			);
+			name = SmartShikshaUITests;
+			productName = SmartShikshaUITests;
+			productReference = 8814E03A20A56BE400FB47BF /* SmartShikshaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8814E01020A56BE200FB47BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = XYZ;
+				TargetAttributes = {
+					8814E01720A56BE200FB47BF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					8814E02E20A56BE400FB47BF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 8814E01720A56BE200FB47BF;
+					};
+					8814E03920A56BE400FB47BF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 8814E01720A56BE200FB47BF;
+					};
+				};
+			};
+			buildConfigurationList = 8814E01320A56BE200FB47BF /* Build configuration list for PBXProject "SmartShiksha" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8814E00F20A56BE200FB47BF;
+			productRefGroup = 8814E01920A56BE200FB47BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8814E01720A56BE200FB47BF /* SmartShiksha */,
+				8814E02E20A56BE400FB47BF /* SmartShikshaTests */,
+				8814E03920A56BE400FB47BF /* SmartShikshaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8814E01620A56BE200FB47BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8814E07D20A59C3400FB47BF /* ThumbnailGridCell.xib in Resources */,
+				8814E05E20A5906200FB47BF /* Students.json in Resources */,
+				886F5E9320A5AF56005ADEDA /* Notes.storyboard in Resources */,
+				8814E02920A56BE400FB47BF /* LaunchScreen.storyboard in Resources */,
+				8814E08120A59DBA00FB47BF /* oxford_guide_to_english_grammar.pdf in Resources */,
+				8814E02620A56BE400FB47BF /* Assets.xcassets in Resources */,
+				88EB136820AEBA4C008F367F /* Quiz.json in Resources */,
+				8814E05420A56F9B00FB47BF /* Attendance.storyboard in Resources */,
+				8814E02120A56BE200FB47BF /* Main.storyboard in Resources */,
+				8814E07C20A59C3400FB47BF /* SearchResultsCell.xib in Resources */,
+				8814E07B20A59C3400FB47BF /* Reader.storyboard in Resources */,
+				883C196320B549EF00C783C6 /* Countries Capitals Currencies.pdf in Resources */,
+				88EB136A20AEC9F9008F367F /* Quiz.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8814E02D20A56BE400FB47BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8814E03820A56BE400FB47BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886F5E9420A5AF56005ADEDA /* Notes.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8814E01420A56BE200FB47BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8814E06C20A59AC500FB47BF /* AppearanceViewController.swift in Sources */,
+				8814E06E20A59AC500FB47BF /* ActionMenuViewController.swift in Sources */,
+				886F5EA020A5B6AD005ADEDA /* DatabaseManager.swift in Sources */,
+				886F5EA820A5BAB4005ADEDA /* Note+CoreDataProperties.swift in Sources */,
+				88EB136420AEB36D008F367F /* SSQuizItem.swift in Sources */,
+				8814E07320A59AC500FB47BF /* BookshelfCell.swift in Sources */,
+				8814E07720A59AC500FB47BF /* ThumbnailGridViewController.swift in Sources */,
+				8814E07520A59AC500FB47BF /* SearchViewController.swift in Sources */,
+				88EB136220AEB34E008F367F /* SSQuizViewModel.swift in Sources */,
+				8814E06D20A59AC500FB47BF /* OutlineViewController.swift in Sources */,
+				886F5EA720A5BAB4005ADEDA /* Note+CoreDataClass.swift in Sources */,
+				8814E05620A5724600FB47BF /* SSAttendaceTableViewCell.swift in Sources */,
+				8814E05820A5746200FB47BF /* Student.swift in Sources */,
+				886F5E8F20A5AF0A005ADEDA /* SSNotesViewController.swift in Sources */,
+				8814E01E20A56BE200FB47BF /* DashBoardViewController.swift in Sources */,
+				88EB136C20AECC47008F367F /* SSQuizCollectionViewCell.swift in Sources */,
+				8814E01C20A56BE200FB47BF /* AppDelegate.swift in Sources */,
+				886F5EAA20A5C2B0005ADEDA /* SSNoteEditorViewController.swift in Sources */,
+				886F5EA620A5BAB4005ADEDA /* NotesSubject+CoreDataProperties.swift in Sources */,
+				8814E04E20A56C9100FB47BF /* SSAttendanceViewController.swift in Sources */,
+				886F5E9120A5AF25005ADEDA /* SSNotesViewModel.swift in Sources */,
+				8814E06F20A59AC500FB47BF /* ThumbnailGridCell.swift in Sources */,
+				8814E07420A59AC500FB47BF /* SearchResultsCell.swift in Sources */,
+				8814E07120A59AC500FB47BF /* BookmarkViewController.swift in Sources */,
+				882F606E20A97C7B000C4F8B /* SSNoticeBoardViewController.swift in Sources */,
+				8814E07220A59AC500FB47BF /* BookshelfViewController.swift in Sources */,
+				8814E07020A59AC500FB47BF /* BookViewController.swift in Sources */,
+				88EB136020AEB338008F367F /* SSQuizViewController.swift in Sources */,
+				8814E05A20A5760000FB47BF /* SSAttendanceViewModel.swift in Sources */,
+				8814E07620A59AC500FB47BF /* OutlineCell.swift in Sources */,
+				8814E02420A56BE200FB47BF /* SmartShiksha.xcdatamodeld in Sources */,
+				88EB136E20AECC5F008F367F /* SSQuizOptionTableViewCell.swift in Sources */,
+				886F5EA520A5BAB4005ADEDA /* NotesSubject+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8814E02B20A56BE400FB47BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8814E03420A56BE400FB47BF /* SmartShikshaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8814E03620A56BE400FB47BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8814E03F20A56BE400FB47BF /* SmartShikshaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8814E03120A56BE400FB47BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8814E01720A56BE200FB47BF /* SmartShiksha */;
+			targetProxy = 8814E03020A56BE400FB47BF /* PBXContainerItemProxy */;
+		};
+		8814E03C20A56BE400FB47BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8814E01720A56BE200FB47BF /* SmartShiksha */;
+			targetProxy = 8814E03B20A56BE400FB47BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8814E01F20A56BE200FB47BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8814E02020A56BE200FB47BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8814E02720A56BE400FB47BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8814E02820A56BE400FB47BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8814E04120A56BE400FB47BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8814E04220A56BE400FB47BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8814E04420A56BE400FB47BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SmartShiksha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.SmartShiksha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8814E04520A56BE400FB47BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SmartShiksha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.SmartShiksha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8814E04720A56BE400FB47BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShikshaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.SmartShikshaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShiksha.app/SmartShiksha";
+			};
+			name = Debug;
+		};
+		8814E04820A56BE400FB47BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShikshaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.SmartShikshaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShiksha.app/SmartShiksha";
+			};
+			name = Release;
+		};
+		8814E04A20A56BE400FB47BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShikshaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.SmartShikshaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartShiksha;
+			};
+			name = Debug;
+		};
+		8814E04B20A56BE400FB47BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartShikshaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xyz.SmartShikshaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartShiksha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8814E01320A56BE200FB47BF /* Build configuration list for PBXProject "SmartShiksha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8814E04120A56BE400FB47BF /* Debug */,
+				8814E04220A56BE400FB47BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8814E04320A56BE400FB47BF /* Build configuration list for PBXNativeTarget "SmartShiksha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8814E04420A56BE400FB47BF /* Debug */,
+				8814E04520A56BE400FB47BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8814E04620A56BE400FB47BF /* Build configuration list for PBXNativeTarget "SmartShikshaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8814E04720A56BE400FB47BF /* Debug */,
+				8814E04820A56BE400FB47BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8814E04920A56BE400FB47BF /* Build configuration list for PBXNativeTarget "SmartShikshaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8814E04A20A56BE400FB47BF /* Debug */,
+				8814E04B20A56BE400FB47BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8814E02220A56BE200FB47BF /* SmartShiksha.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8814E02320A56BE200FB47BF /* SmartShiksha.xcdatamodel */,
+			);
+			currentVersion = 8814E02320A56BE200FB47BF /* SmartShiksha.xcdatamodel */;
+			path = SmartShiksha.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8814E01020A56BE200FB47BF /* Project object */;
+}
